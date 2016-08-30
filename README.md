@@ -6,12 +6,12 @@ Submit Homework Here
 
 print this:
 
-      *
-     ***
-    *****
-   *******
-  *********
- ***********
+        *
+       ***
+      *****
+     *******
+    *********
+   ***********
  
  We should be able to adjust the pyramid height easily
  
