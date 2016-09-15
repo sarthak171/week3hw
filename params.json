@@ -1,0 +1,6 @@
+{
+  "name": "Week3hw",
+  "tagline": "A New Assignment For A New Age (Week)",
+  "body": "#Week 3 Homework\r\n\r\nSubmit Homework Here\r\n\r\n\r\n## Assignment\r\n\r\nprint this:\r\n\r\n        *\r\n       ***\r\n      *****\r\n     *******\r\n    *********\r\n   ***********\r\n \r\n We should be able to adjust the pyramid height easily\r\n\r\n**MUST USE POINTERS**\r\n \r\n## Format\r\n \r\n \r\n 1. Fork Repo\r\n 2. Add File: Name.cpp (your name obviously)\r\n 3. Push\r\n 4. Submit Pull Request\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
