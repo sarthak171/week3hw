@@ -1,25 +1,15 @@
-# week2hw
-Submit Homework Here
+# Week 3 HW
 
+- Create a “Parser” Object and a main.cpp file to handle IO
+- Must have 3 functions
+	- Pyramids
+		- Use Pointers! (no pointers, no credit)
+- Reference
+	- Must be able to take command line input 
+	- Example Usage
 
-#Assignment
-
-print this:
-
-        *
-       ***
-      *****
-     *******
-    *********
-   ***********
- 
- We should be able to adjust the pyramid height easily
- 
- 
- #Format
- 
- 
- 1. Fork Repo
- 2. Add File: Name.cpp (your name obviously)
- 3. Push
- 4. Submit Pull Request
+```bash
+./program -h ->returns a list of commands
+./program -h [Command] -> returns description of that command
+```
+*Pick the three most useful commands (or more) to put into the data base*
