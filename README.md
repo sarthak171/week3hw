@@ -1,7 +1,7 @@
 # Week 3 HW
 
 - Create a “Parser” Object and a main.cpp file to handle IO
-- Must have 3 functions
+- Must have 2 functions
 	- Pyramids
 		- Use Pointers! (if you can)
 		
