@@ -24,30 +24,57 @@
 
 <ul>
 <li>Create a “Parser” Object and a main.cpp file to handle IO</li>
-<li>Must have 3 functions
+<li>
+<p>Must have 3 functions</p>
 
 <ul>
-<li>Pyramids
+<li>
+<p>Pyramids</p>
 
 <ul>
-<li>Use Pointers! (no pointers, no credit)</li>
+<li>Use Pointers! (if you can)</li>
 </ul>
+
+<div class="highlight highlight-source-c++"><pre>#<span class="pl-k">include</span> <span class="pl-s"><span class="pl-pds">&lt;</span>iostream<span class="pl-pds">&gt;</span></span>
+<span class="pl-k">using</span> <span class="pl-k">namespace</span> <span class="pl-en">std</span><span class="pl-k">;</span>
+
+<span class="pl-k">void</span> <span class="pl-en">pyramid</span>(string* loc, <span class="pl-k">int</span> levels) {
+    std::string s = *loc;
+    s = <span class="pl-s"><span class="pl-pds">"</span>*<span class="pl-cce">\n</span>**<span class="pl-cce">\n</span>***<span class="pl-cce">\n</span>****<span class="pl-pds">"</span></span>; <span class="pl-c">//no you can't do this, you gotta do it with for loops</span>
+    <span class="pl-c">//put code here (s+= "*") and etc, \n gives you a line break</span>
+    *loc = s;
+
+}
+
+<span class="pl-k">int</span> <span class="pl-en">main</span>() {
+    string str = <span class="pl-s"><span class="pl-pds">"</span><span class="pl-pds">"</span></span>;
+    string* strLoc = &amp;str;
+    <span class="pl-c1">pyramid</span>(strLoc, <span class="pl-c1">3</span>);
+    cout &lt;&lt; str &lt;&lt; endl;
+}
+
+
+</pre></div>
 </li>
-</ul>
-</li>
-<li>Reference
+<li>
+<p>Reference</p>
 
 <ul>
 <li>Must be able to take command line input </li>
 <li>Example Usage</li>
 </ul>
+
+<div class="highlight highlight-source-shell"><pre>./program -h -<span class="pl-k">&gt;</span>returns a list of commands
+./program -h [Command] -<span class="pl-k">&gt;</span> returns description of that <span class="pl-c1">command</span>
+./program -h nano -<span class="pl-k">&gt;</span> returns <span class="pl-s"><span class="pl-pds">"</span>A terminal text editor (you can't use nano now)</span></pre></div>
+
+<p><em>Pick the three most useful commands (or more) to put into the data base</em></p>
+</li>
+</ul>
 </li>
 </ul>
 
-<div class="highlight highlight-source-shell"><pre>./program -h -<span class="pl-k">&gt;</span>returns a list of commands
-./program -h [Command] -<span class="pl-k">&gt;</span> returns description of that <span class="pl-c1">command</span></pre></div>
-
-<p><em>Pick the three most useful commands (or more) to put into the data base</em></p>
+<p><a href="https://compvision.github.io/commands">Commands Reference</a></p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/compvision/week3hw">Week 3 Homework</a> is maintained by <a href="https://github.com/compvision">compvision</a>.</span>
