@@ -1,5 +1,7 @@
 # Week 3 HW
 
+###The Assignment
+
 - Create a “Parser” Object and a main.cpp file to handle IO
 - Must have 2 functions
 	- Pyramids
@@ -39,3 +41,8 @@
 *Pick the three most useful commands (or more) to put into the data base*
 
 [Commands Reference](https://compvision.github.io/commands)
+
+
+###Turning it in
+
+As usual, fork [this repo](https://github.com/compvision/week3hw), and put your code (call it FirstName_LastName), and submit a pull request
