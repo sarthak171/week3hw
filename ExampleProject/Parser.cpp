@@ -5,12 +5,15 @@ Parser::Parser() {
 }
 
 string Parser::getCommandRef(string cmd){
-	/*
-		Put Your Command Reference Code Here (ie the if else statements)
-	*/
-	if (cmd == "cat"){
-		return "prints content of file";
+
+	if(cmd == "-p"){
+			return "Prints out a pyramid\n";
+		}if(cmd == "atom" || cmd == "nano"){
+			return "A text editor\n";
+		}if(cmd == "ls"){
+			return "Prints all Files\n";
+		}
 	}
-	return "reference";
+
 }
 //we dont need to redefine the class here since we already did that in

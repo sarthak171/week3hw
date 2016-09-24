@@ -1,40 +1,45 @@
 #include <iostream>
+#include <stdlib.h>
 #include "Parser.h"
 using namespace std;
 
-/**
-	Example Usage of Pointers. You Must Rewrite this method so that the pyramid is printed as such:
-      *
-     ***
-    *****
-   *******
-  *********
- ***********
-*************
-
-**/
-void pyramid(int levels, string* output){
-	for (int i = 0; i < levels; i++){
-		for (int j = i; j < levels; j++){
-			(*output)+="*";
-		}
-		(*output)+="\n";
-	}
+void pyramid(string* loc, int levels)
+{
+  for(int x = 0; x < levels; x++)
+  {
+    for(int y = 0; y < levels - x; y++)
+    {
+      *loc += " ";
+    }
+    for(int z = 0; z <= x; z++)
+    {
+      *loc += "* ";
+    }
+    *loc += "\n";
+  }
 }
 
-int main(){
-	cout << "Enter in Amount of Levels: \n-->";
-	int levels;
-	cin >> levels;
-	string py = "";
-	string* pyLoc = &py;
-	pyramid(levels, pyLoc);
-	cout << "As Promised:\n\n" << *pyLoc << "\n\n";
-	
-	cout << "This next part must be done through cmdline args, this is just to prove that the classes i wrote work";
-	cout << endl << endl;
-	Parser p;
-	cout<<"Cat Command: " << p.getCommandRef("cat") << endl;
-
-	return 0;
+int main(int argc, char* argv[])
+{
+  Parser p;
+  if(string(argv[1]).compare("-h") == 0)
+  {
+    if(argc > 2)
+    {
+      cout<<p.getCommandRef(string(argv[2]));
+    }
+    else
+    {
+      cout << "Reference\n";
+    }
+  }
+  else
+  {
+    string py = "";
+    string* pyLoc = &py;
+    int layers = atoi(argv[1]);
+    pyramid(pyLoc,layers);
+    cout<<*pyLoc;
+  }
+  return 0;
 }
